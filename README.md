@@ -50,7 +50,7 @@ The following table benchmarks top cloud and hosted visual analytics suites. Ent
 
 ## 💻 Open-Source GitHub Projects &amp; Charting Libraries
 
-A comprehensive selection of open-source charting toolkits, graphics grammars, and self-hosted BI platforms. Sorted descending by GitHub Stars_Count.
+A comprehensive selection of open-source charting toolkits, graphics grammars, and self-hosted BI platforms. Sorted descending by GitHub_Stars_Count.
 
 | Project | GitHub_Stars | License | Rendering Tech | Primary Focus &amp; Best Used For |
 | :--- | :--- | :--- | :--- | :--- |
