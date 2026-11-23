@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Data-Visualization-Charting-Libraries/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Visualization-Charting-Libraries?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Visualization-Charting-Libraries/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Visualization-Charting-Libraries?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Visualization-Charting-Libraries/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-Visualization-Charting-Libraries?style=social" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Visualization-Charting-Libraries/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -50,9 +50,9 @@ The following table benchmarks top cloud and hosted visual analytics suites. Ent
 
 ## 💻 Open-Source GitHub Projects &amp; Charting Libraries
 
-A comprehensive selection of open-source charting toolkits, graphics grammars, and self-hosted BI platforms. Sorted descending by GitHub star count.
+A comprehensive selection of open-source charting toolkits, graphics grammars, and self-hosted BI platforms. Sorted descending by GitHub Stars_Count.
 
-| Project | Stars | License | Rendering Tech | Primary Focus &amp; Best Used For |
+| Project | GitHub_Stars | License | Rendering Tech | Primary Focus &amp; Best Used For |
 | :--- | :--- | :--- | :--- | :--- |
 | **[D3.js](https://github.com/d3/d3)** | [![Stars](https://img.shields.io/github/stars/d3/d3?style=social&color=white)](https://github.com/d3/d3/stargazers) | ISC | SVG, Canvas, HTML | Foundational low-level visualization grammar. Binds data directly to the DOM for complete design freedom and custom animations. |
 | **[Mermaid](https://github.com/mermaid-js/mermaid)** | [![Stars](https://img.shields.io/github/stars/mermaid-js/mermaid?style=social&color=white)](https://github.com/mermaid-js/mermaid/stargazers) | MIT | SVG | Markdown-inspired text-to-diagrams and visualization tool. Ideal for flowcharts, sequence diagrams, Gantt charts, and state graphs. |
