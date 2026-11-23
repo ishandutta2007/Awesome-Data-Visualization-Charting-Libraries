@@ -1,87 +1,112 @@
-# Awesome-Data-Visualization-Charting-Libraries
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Data Visualization and Charting Libraries" width="100%" />
+</p>
 
-## Top Data Visualization & Charting Libraries Ecosystem
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Business Intelligence, Interactive Charting & Self-Hosted Visualization Engines*  
-**Last updated: March 2026**
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Data Visualization & Charting**. These tools help teams turn raw data into dashboards, reports, and interactive charts—covering everything from enterprise BI suites to open-source JavaScript libraries that render visualizations directly in the browser.
-
-**Examples** include Tableau, Power BI, Looker, Apache ECharts, D3.js, Chart.js, Observable Plot, and Metabase (the category leaders).
-
-**Open-source emphasis**: This section highlights every major active project for self-hosted BI, open-source charting libraries, and community-driven visualization—ideal for teams seeking data sovereignty, avoiding per-seat SaaS pricing, and maintaining full control over their rendering pipeline. The open-source landscape is genuinely mature: **Apache ECharts** provides a powerful declarative charting library , **D3.js** offers unmatched low-level control for custom visualizations , and **Apache Superset** delivers enterprise-grade BI with row-level security and embedding free of charge .
-
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-- **[Tableau](https://www.tableau.com/)**  
-  **The enterprise standard for visual analytics.** Drag-and-drop dashboard creation with extensive chart types. Per-user Creator/Explorer/Viewer licensing. **Tableau Public** is free for publicly shared dashboards; full platform requires a 14-day trial .
-
-- **[Microsoft Power BI](https://powerbi.microsoft.com/)**  
-  **Microsoft's BI platform with deep Office integration.** Desktop authoring and cloud publishing. **Pro: $14/user/month; Premium Per User: $24/user/month** . **Free**: Power BI Desktop (authoring only); **60-day trial** for Pro/Premium .
-
-- **[Looker](https://looker.com/)**  
-  **Google Cloud's BI platform built on LookML semantic modeling.** Governed self-service with consistent metric definitions. Quote-only enterprise contract .
-
-- **[Domo](https://www.domo.com/)**  
-  Cloud BI with drag-and-drop dashboard builder and pre-built connectors. Consumption-based enterprise pricing .
-
-- **[Sigma Computing](https://www.sigmacomputing.com/)**  
-  Cloud-native BI with a spreadsheet-like interface for exploring warehouse data at scale. Positioned for business users wanting SQL-level power without SQL .
-
-## Open-Source GitHub Projects
-
-- **[Apache ECharts](https://github.com/apache/echarts)**  
-  **The most powerful open-source charting library for the web.** **Apache-2.0**, pure JavaScript built on zrender . **ECharts 5** introduces **dynamic sorting charts** (bar-racing, line-racing) for temporal storytelling, redesigned default themes optimized for color accessibility, intelligent label layout that auto-hides overlaps and wraps text, and a redesigned timeline component that selects meaningful tick intervals . **Declarative configuration**—define data and encodings, and ECharts handles the rendering. **Best for teams wanting a proven, feature-rich charting library** with animation and narrative capabilities without commercial licensing .
-
-- **[D3.js](https://github.com/d3/d3)**  
-  **The foundational library for custom, data-driven visualizations.** **Observable** (BSD-3-Clause). **Low-level control over every visual element**—you bind data to DOM, apply transforms, and define interactions manually . **Best for custom visualization designs not available in high-level libraries**—network graphs, force-directed layouts, geographic maps, and complex linked views . **Trade-off**: steep learning curve; assumes HTML/SVG/CSS/JavaScript fluency . **Use D3 when you need full control**; use a higher-level library when you need speed .
-
-- **[Chart.js](https://github.com/chartjs/chart.js)**  
-  **The most accessible open-source charting library for simple, beautiful charts.** **MIT licensed**. **Canvas-based**—add a `<canvas>` tag, load from CDN, and instantiate a chart with labels, datasets, and options . **Responsive by default**, with hover tooltips and animation . **Best for quick bar, line, and pie charts** where simplicity matters more than deep customization .
-
-- **[Observable Plot](https://github.com/observablehq/plot)**  
-  **Exploratory visualization library built on D3's foundations.** **ISC licensed**. **Concise API**—a meaningful chart in one line of code . **Built-in transforms** (group, bin, stack, window) reduce data preparation work . **Composable marks**—layer rules, areas, and lines into a single plot; extend with custom marks . **Works in vanilla HTML, React, Vue, Svelte, and Node.js** (server-side SVG/PNG rendering) . **Best for rapid exploration and finding insights quickly**—"with Plot, you'll see more charts" .
-
-- **[Apache Superset](https://github.com/apache/superset)**  
-  **The most enterprise-ready open-source BI platform.** **Apache-2.0** . **No-code chart builder and SQL Editor** for advanced queries. **Row-level security, embedding, and SSO are free**—Metabase gates these behind paid tiers . **Rich chart types** including maps and Sankey diagrams; broad data source support (MySQL, Presto, Doris, and more) . **Trade-off**: operational complexity (Redis + Celery + Kubernetes recommended); steeper learning curve for non-technical users . **Best for technical teams wanting governed self-service BI** with full control over data and permissions .
-
-- **[Metabase](https://github.com/metabase/metabase)**  
-  **The easiest open-source BI tool for business users.** **AGPL v3** (open-core). **Question builder lets non-technical users explore data without SQL** . **Docker + PostgreSQL deployment**—runs smoothly on 2 cores/4 GB RAM . **Trade-off**: **RLS, embedding, and SSO require the paid Pro/Enterprise plan**; complex analysis is weaker than Superset . **Best for startups and business teams** wanting self-service analytics without engineering involvement .
-
-### Additional Strong Open-Source Options
-
-- **Redash** (BSD-2-Clause) — **SQL-first lightweight query and visualization tool**. Query editor with autocomplete, results caching, and dashboards. **In maintenance mode** after Databricks acquisition—avoid for new projects .
-- **Panel** (BSD-3-Clause) — **Python-native interactive dashboards** with rich widget support. Works with Bokeh, Plotly, Matplotlib, and Altair .
-- **Plotly Dash** (MIT) — **Analytical web apps in Python** with callback-based interactivity. Best for production dashboards needing fine-grained control .
-- **ZigZag (meszmate/zigzag)** — **TUI framework for Zig** with 40+ components including charts, bar charts, heatmaps, and Braille canvas. **Not a web charting library**—it renders terminal UIs in Zig . The prompt's reference to "simpsoka/zigzag" is a different project: **free, open-source embroidery software** for converting SVG to machine embroidery, not a data visualization library .
-
-**Frameworks for building custom systems**: Choose **Apache ECharts** for rich, animated web charts, **D3.js** for fully custom visualizations, **Observable Plot** for rapid exploratory analysis, and **Apache Superset** or **Metabase** for full BI dashboards. Use **Chart.js** when you need a simple chart in minutes.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Data visualization platforms handle potentially sensitive business data and query patterns; enforce access controls, validate dashboard permissions, and avoid exposing raw data through interactive filters.
-- **Tool choice depends on whether you need a charting library or a full BI platform.** **ECharts is the most capable open-source charting library** for web apps—powerful, animated, and free . **D3.js is for custom control**, not quick charts—expect a steep learning curve . **Chart.js is for simple charts**, not complex dashboards . **Superset is the only open-source BI tool with free RLS, embedding, and SSO**—Metabase gates these behind paid tiers . **Metabase is easier for business users** but weaker for complex analysis . **Redash is in maintenance mode**—avoid for new deployments . **Beware category mismatches**: "simpsoka/zigzag" is embroidery software, not a charting library . Validate whether you need a library (ECharts, D3) or a platform (Superset, Metabase) before committing.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Visualization-Charting-Libraries/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Visualization-Charting-Libraries?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Visualization-Charting-Libraries/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-Visualization-Charting-Libraries?style=social" alt="GitHub forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Visualization-Charting-Libraries/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
-**Made for data analysts, BI developers, and teams building visualization infrastructure.**  
-Let's make data visualization and charting more open, expressive, and accessible.
+# 📊 Awesome Data Visualization &amp; Charting Libraries
+
+Welcome to the definitive curated index of **data visualization libraries**, **interactive charting toolkits**, and **enterprise Business Intelligence (BI) platforms**. Whether you are architecting an interactive analytics dashboard in React/Vue/Svelte, designing publication-quality scientific plots in Python, or evaluating cloud BI suites with governed data semantic layers, this guide covers the modern data landscape.
+
+## 📑 Table of Contents
+
+- [🌐 Sector Overview &amp; Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS &amp; Hosted BI Platforms](#-saas--hosted-bi-platforms)
+- [💻 Open-Source GitHub Projects &amp; Charting Libraries](#-open-source-github-projects--charting-libraries)
+- [⭐ Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support &amp; Sponsorship](#-support--sponsorship)
+- [⚖️ Disclaimer](#-disclaimer)
+
+---
+
+## 🌐 Sector Overview &amp; Market Dynamics
+
+The global data visualization and business intelligence market is valued at approximately **$11B to $35B** (scaling past **$100B+** across wider cloud analytics by 2030 at ~11% CAGR). The sector exhibits a **hybrid structure—moderately concentrated at the enterprise top** dominated by hyperscalers (Microsoft Power BI, Salesforce Tableau, Google Cloud Looker), yet **heavily fragmented across the application layer and open-source ecosystem**, where specialized charting libraries, embedded analytics engines, and self-hosted tools continuously innovate.
+
+---
+
+## 🏢 SaaS &amp; Hosted BI Platforms
+
+The following table benchmarks top cloud and hosted visual analytics suites. Entries are sorted descending by company size (valuation / annual revenue).
+
+| Platform | Company Valuation / Revenue | Starting Tier Pricing | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Power BI](https://powerbi.microsoft.com/)** | **~$3.1 Trillion** market cap (Microsoft) | **$10/user/month** (Power BI Pro annual); **$20/user/month** (Premium Per User) | **Free forever plan**: Power BI Desktop (local authoring/modeling only; cloud publishing/sharing disabled). **60-day free trial** for Power BI Pro/Premium. | Deep Office 365 & Azure integration, DAX modeling engine, and ubiquitous enterprise adoption. |
+| **[Looker](https://looker.com/)** | **~$2.1 Trillion** market cap (Alphabet/Google) | **$9/user/month** (Looker Studio Pro); enterprise Looker starts at **~$5,000/month** ($60,000/year base platform) | **Free forever plan**: Looker Studio basic (unlimited free report authoring/sharing via Google connectors). **90-day free trial** for Looker Google Cloud core instance. | Cloud BI built around the centralized LookML semantic modeling layer and in-database queries. |
+| **[Tableau](https://www.tableau.com/)** | **~$300 Billion** market cap (Salesforce) | **$15/user/month** (Viewer, billed annually); Creator requires **$75/user/month** ($900/year min) | **Free forever plan**: Tableau Public (free authoring, but workbooks must be saved publicly). **14-day free trial** for full Tableau Cloud/Creator. | The industry standard for drag-and-drop visual data exploration and interactive storytelling. |
+| **[Sigma Computing](https://www.sigmacomputing.com/)** | **~$3.0 Billion** valuation (Series D) | **$300/month** (base entry tier); median mid-market deployments start at **~$15,000–$30,000/year** | **7-day free trial**: Access to full spreadsheet interface on sample data or connected warehouse (capped at 50 total exports). | Cloud-native analytics platform combining a spreadsheet-like UI with direct, live SQL queries on Snowflake, BigQuery, and Databricks. |
+| **[Domo](https://www.domo.com/)** | **~$350 Million** market cap (Public: DOMO) | **$2,500/month** ($30,000/year committed tier with ~9,200 consumption credits) | **30-day free trial**: Enterprise platform access with no credit limits (excludes AutoML and Jupyter workspaces). | Full-stack cloud analytics suite offering drag-and-drop Magic ETL, 1,000+ connectors, and unlimited seats. |
+
+---
+
+## 💻 Open-Source GitHub Projects &amp; Charting Libraries
+
+A comprehensive selection of open-source charting toolkits, graphics grammars, and self-hosted BI platforms. Sorted descending by GitHub star count.
+
+| Project | Stars | License | Rendering Tech | Primary Focus &amp; Best Used For |
+| :--- | :--- | :--- | :--- | :--- |
+| **[D3.js](https://github.com/d3/d3)** | [![Stars](https://img.shields.io/github/stars/d3/d3?style=social&color=white)](https://github.com/d3/d3/stargazers) | ISC | SVG, Canvas, HTML | Foundational low-level visualization grammar. Binds data directly to the DOM for complete design freedom and custom animations. |
+| **[Mermaid](https://github.com/mermaid-js/mermaid)** | [![Stars](https://img.shields.io/github/stars/mermaid-js/mermaid?style=social&color=white)](https://github.com/mermaid-js/mermaid/stargazers) | MIT | SVG | Markdown-inspired text-to-diagrams and visualization tool. Ideal for flowcharts, sequence diagrams, Gantt charts, and state graphs. |
+| **[Apache Superset](https://github.com/apache/superset)** | [![Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) | Apache-2.0 | React, D3, DeckGL | Enterprise-ready self-hosted BI platform. Includes no-code chart builders, SQL IDE, free embedded dashboards, and row-level security (RLS). |
+| **[Chart.js](https://github.com/chartjs/Chart.js)** | [![Stars](https://img.shields.io/github/stars/chartjs/Chart.js?style=social&color=white)](https://github.com/chartjs/Chart.js/stargazers) | MIT | HTML5 Canvas | Lightweight, responsive web charting library. Best for quick, accessible, and animated bar, line, and radar charts out of the box. |
+| **[Apache ECharts](https://github.com/apache/echarts)** | [![Stars](https://img.shields.io/github/stars/apache/echarts?style=social&color=white)](https://github.com/apache/echarts/stargazers) | Apache-2.0 | Canvas, SVG (ZRender) | High-performance declarative charting library. Exceptional for dynamic sorting bar charts, geospatial heatmaps, 3D globes, and large datasets. |
+| **[Metabase](https://github.com/metabase/metabase)** | [![Stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers) | AGPL-3.0 | Web Application (Clojure/React) | The most user-friendly self-hosted BI platform. Allows non-technical business users to build dashboards and ask questions without writing SQL. |
+| **[Recharts](https://github.com/recharts/recharts)** | [![Stars](https://img.shields.io/github/stars/recharts/recharts?style=social&color=white)](https://github.com/recharts/recharts/stargazers) | MIT | React, SVG | Redefined charting library built on React components and D3 submodules. Offers a clean, declarative JSX API for React web apps. |
+| **[Plotly Dash](https://github.com/plotly/dash)** | [![Stars](https://img.shields.io/github/stars/plotly/dash?style=social&color=white)](https://github.com/plotly/dash/stargazers) | MIT | React, Plotly.js | Python/R/Julia framework for building interactive analytical web applications and production data science dashboards without JavaScript. |
+| **[Plotly.js](https://github.com/plotly/plotly.js)** | [![Stars](https://img.shields.io/github/stars/plotly/plotly.js?style=social&color=white)](https://github.com/plotly/plotly.js/stargazers) | MIT | D3.js, WebGL, SVG | Declarative scientific graphing library powering Plotly Python and Dash. Supports 40+ statistical, financial, geographic, and 3D chart types. |
+| **[ApexCharts.js](https://github.com/apexcharts/apexcharts.js)** | [![Stars](https://img.shields.io/github/stars/apexcharts/apexcharts.js?style=social&color=white)](https://github.com/apexcharts/apexcharts.js/stargazers) | MIT | SVG | Modern JavaScript charting library with polished UI themes, smooth zooming/panning, and official integrations for Vue, React, and Angular. |
+| **[AntV G2](https://github.com/antvis/G2)** | [![Stars](https://img.shields.io/github/stars/antvis/G2?style=social&color=white)](https://github.com/antvis/G2/stargazers) | Apache-2.0 | Canvas, SVG | A data-driven visualization grammar designed by Ant Group. Highly composable and structured according to Wilkinson's Grammar of Graphics. |
+| **[Panel](https://github.com/holoviz/panel)** | [![Stars](https://img.shields.io/github/stars/holoviz/panel?style=social&color=white)](https://github.com/holoviz/panel/stargazers) | BSD-3-Clause | Python, Bokeh | Python toolkit for creating exploratory data apps and multi-page dashboards with Bokeh, Matplotlib, Plotly, and Altair integrations. |
+| **[Vega-Lite](https://github.com/vega/vega-lite)** | [![Stars](https://img.shields.io/github/stars/vega/vega-lite?style=social&color=white)](https://github.com/vega/vega-lite/stargazers) | BSD-3-Clause | Canvas, SVG | High-level declarative grammar of interactive graphics. Compiles concise JSON specifications into full Vega visualization descriptions. |
+| **[Observable Plot](https://github.com/observablehq/plot)** | [![Stars](https://img.shields.io/github/stars/observablehq/plot?style=social&color=white)](https://github.com/observablehq/plot/stargazers) | ISC | SVG | Concise exploratory visualization engine created by the authors of D3. Features built-in statistical transforms and composable marks. |
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Data-Visualization-Charting-Libraries&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Data-Visualization-Charting-Libraries&type=date&legend=top-left)
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly encouraged! Help keep this ecosystem up to date:
+
+1. 🍴 **Fork the repository**.
+2. 🌿 **Create a new branch**: `git checkout -b feature/add-new-library`.
+3. 📝 **Add or update an entry** in `README.md` maintaining alphabetical or star-ranked order. Ensure factual descriptions, verified starting prices, and official links.
+4. 🚀 **Commit your changes**: `git commit -m 'feat: add <ToolName> to charting ecosystem'`.
+5. 📬 **Open a Pull Request** with a brief summary of why the library or platform should be featured.
+
+---
+
+## 💖 Support &amp; Sponsorship
+
+Thank you for visiting and using this resource! If you find this curated collection valuable for your projects, research, or team, please consider supporting the maintenance of this repository:
+
+- ⭐ **Star this repository** to help others discover it on GitHub.
+- 🍴 **Fork and share** with colleagues and the broader data community.
+- ☕ **Buy me a coffee / Sponsor**: Support ongoing maintenance on the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚖️ Disclaimer
+
+- This repository is a **community-curated index** provided for informational and educational purposes. Mention of specific platforms or tools does not constitute an endorsement.
+- Pricing, free tier quotas, and feature sets change frequently. Always confirm terms with the respective vendor documentation.
+- When evaluating data visualization platforms, ensure appropriate data governance, row-level security (RLS), and compliance protocols are configured before exposing sensitive databases.
+
+---
+
+<p align="center">
+  <b>Built with ❤️ for data analysts, visual engineers, and business intelligence architects.</b>
+</p>
