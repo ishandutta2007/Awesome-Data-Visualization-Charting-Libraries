@@ -1,6 +1,6 @@
 # Awesome-Data-Visualization-Charting-Libraries
 
-# Top Data Visualization & Charting Libraries Ecosystem
+## Top Data Visualization & Charting Libraries Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Business Intelligence, Interactive Charting & Self-Hosted Visualization Engines*  
